@@ -4,13 +4,10 @@ import com.formdev.flatlaf.FlatIntelliJLaf;
 import javax.swing.*;
 import nl.xx1.openweb.gui.JokesWindow;
 
-/**
- * Main application class for the Chuck Norris Jokes application.
- */
+/** Main application class for the Chuck Norris Jokes application. */
 public class JokesApplication {
     /**
-     * The main entry point for the application.
-     * Sets up the Look and Feel and initializes the main window.
+     * The main entry point for the application. Sets up the Look and Feel and initializes the main window.
      *
      * @param args Command line arguments (not used).
      */

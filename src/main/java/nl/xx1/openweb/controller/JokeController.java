@@ -6,25 +6,17 @@ import nl.xx1.openweb.JokeObserver;
 import nl.xx1.openweb.dto.JokeResponse;
 import nl.xx1.openweb.service.ChuckNorrisJokeGenerator;
 
-/**
- * Controller class that manages joke fetching and notifies observers.
- * Implements the Observer pattern.
- */
+/** Controller class that manages joke fetching and notifies observers. Implements the Observer pattern. */
 public class JokeController {
     private final ChuckNorrisJokeGenerator chuckNorrisJokeGenerator;
     private final List<JokeObserver> observers = new ArrayList<>();
 
-    /**
-     * Constructor for JokeController.
-     * Initializes the ChuckNorrisJokeGenerator.
-     */
+    /** Constructor for JokeController. Initializes the ChuckNorrisJokeGenerator. */
     public JokeController() {
         this.chuckNorrisJokeGenerator = ChuckNorrisJokeGenerator.getInstance();
     }
 
-    /**
-     * Fetches a new joke and notifies all observers.
-     */
+    /** Fetches a new joke and notifies all observers. */
     public void fetchJoke() {
         notifyObservers(chuckNorrisJokeGenerator.getRandomJoke());
     }
